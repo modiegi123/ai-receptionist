@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Receptionist — Live Demo</title>
+<meta name="description" content="Try the AI receptionist for Fresh Cuts Barbershop: bookings, pricing, FAQs and cancellations.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+  <p class="demo-banner">
+    Live demo &middot; static, rule-based simulation running entirely in your browser (no API keys, nothing sent anywhere).
+    The real system in <a href="https://github.com/modiegi123/ai-receptionist" target="_blank" rel="noopener">this repo</a>
+    is powered by the Claude API instead of these canned rules.
+  </p>
+
+  <div class="phone">
+    <div class="chat-header">
+      <div class="avatar">FC</div>
+      <div class="chat-header-text">
+        <h1>Fresh Cuts Barbershop</h1>
+        <p id="statusLine">AI receptionist &middot; online</p>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <div class="quick-replies" id="quickReplies">
+      <button data-msg="Do you have space Saturday at 2?">Saturday at 2?</button>
+      <button data-msg="What are your prices?">Prices?</button>
+      <button data-msg="Where are you located?">Location?</button>
+      <button data-msg="Cancel my appointment">Cancel booking</button>
+    </div>
+
+    <form class="chat-input" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Message" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <p class="back-link"><a href="https://github.com/modiegi123/ai-receptionist">&larr; Back to the repo</a></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
