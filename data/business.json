@@ -1,0 +1,31 @@
+{
+  "name": "Fresh Cuts Barbershop",
+  "timezone": "Africa/Johannesburg",
+  "slotMinutes": 30,
+  "hours": {
+    "mon": ["09:00", "18:00"],
+    "tue": ["09:00", "18:00"],
+    "wed": ["09:00", "18:00"],
+    "thu": ["09:00", "18:00"],
+    "fri": ["09:00", "19:00"],
+    "sat": ["08:00", "15:00"],
+    "sun": null
+  },
+  "services": [
+    { "id": "haircut", "name": "Haircut", "price": 150, "durationMinutes": 30 },
+    { "id": "haircut_beard", "name": "Haircut & Beard Trim", "price": 220, "durationMinutes": 45 },
+    { "id": "kids_cut", "name": "Kids Cut", "price": 100, "durationMinutes": 20 }
+  ],
+  "faqs": [
+    { "question": "Where are you located?", "answer": "We're at 12 Main Road, Sandton." },
+    { "question": "Do you take walk-ins?", "answer": "We prioritise bookings, but walk-ins are welcome if there's an open slot." },
+    { "question": "What payment methods do you accept?", "answer": "Cash, card, and EFT." }
+  ],
+  "reminders": {
+    "hoursBefore": 24
+  },
+  "followUp": {
+    "hoursAfter": 2,
+    "message": "Thanks for visiting {business}! We'd love your feedback — reply anytime, and let us know if you'd like to book your next appointment."
+  }
+}
