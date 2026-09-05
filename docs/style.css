@@ -33,21 +33,6 @@ body {
   gap: 14px;
 }
 
-.demo-banner {
-  font-size: 12.5px;
-  line-height: 1.5;
-  color: var(--muted);
-  background: #1a2830;
-  border: 1px solid #24333c;
-  border-radius: 10px;
-  padding: 10px 14px;
-  margin: 0;
-}
-
-.demo-banner a {
-  color: #53bdeb;
-}
-
 .phone {
   background: var(--bg);
   border-radius: 16px;
